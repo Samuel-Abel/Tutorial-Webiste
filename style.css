@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+}
+
+.title-container{
+    background-image: url('https://images.unsplash.com/photo-1417577097439-425fb7dec05e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80');
+    height: 400px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin-bottom: 0;
+}
+
+.title{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100%;
+}
+
+.pulse{
+	animation-name: pulse;
+	-webkit-animation-name: pulse;	
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.9);
+		opacity: 0.7;		
+	}
+	50% {
+		transform: scale(1);
+		opacity: 1;	
+	}	
+	100% {
+		transform: scale(0.9);
+		opacity: 0.7;	
+	}			
+}
+
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-transform: scale(0.95);
+		opacity: 0.7;		
+	}
+	50% {
+		-webkit-transform: scale(1);
+		opacity: 1;	
+	}	
+	100% {
+		-webkit-transform: scale(0.95);
+		opacity: 0.7;	
+	}			
+}
+
+.navbar-container{
+	background-image: url('https://images.unsplash.com/photo-1417577097439-425fb7dec05e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80');
+	height:75px;
+	font-size:1.4rem;
+}
+
+.navbar{
+    display: flex;
+    height:100%;
+    align-items:center;
+    justify-content: center;
+    color: white;
+    margin-top:0;
+}
+
+.navbar li{
+    list-style-type: none;
+    padding: 0 40px;
+}
+
+.main-body{
+    margin:0 50px;
+}
+
+.two-column{
+    display: grid;
+    grid-template: 1fr 2fr;
+}
+
+.col1{
+    padding: 15px 65px;
+    grid-column: 1/2;
+}
+
+.col2{
+    padding: 10px 15px;
+    grid-column: 2/3;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+.sidenav {
+     height:100%;
+    width: 160px; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: darkblue ; 
+    overflow-x: hidden; 
+    padding-top: 20px;
+  }
+ 
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: Black;
+    display: block;
+  }
+  
+
+  .sidenav a:hover {
+    color: red;
+  }
+  
+  .main {
+    margin-left: 150px; 
+    padding: 0px 10px;
+  }
